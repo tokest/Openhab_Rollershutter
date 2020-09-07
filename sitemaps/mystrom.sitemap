@@ -1,0 +1,20 @@
+sitemap mystrom label="MyStrom" {
+        Frame label="Kaffeemaschine" {
+                Switch item=MyStrom_01_Switch
+                Chart item=MyStrom_01_Switch period=W refresh=60000 service="mysql"
+        }
+		Frame label="Adapter 02" {
+                Switch item=MyStrom_02_Switch
+				Chart item=MyStrom_02_Switch period=W refresh=60000 service="mysql" 
+		}
+        Frame label="Adapter 03" {
+                Switch item=MyStrom_03_Switch
+                Chart item=MyStrom_03_Switch period=W refresh=60000 service="mysql"
+        }
+        Frame label="Adapter 04" {
+                Switch item=MyStrom_04_Switch
+                Chart item=MyStrom_04_Switch period=W refresh=60000 service="mysql"
+        }
+	
+}
+

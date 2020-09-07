@@ -1,0 +1,44 @@
+sitemap jalousien label="JALOUSIEN" {
+        
+	Frame label="Alle Jalousien" {	
+		Switch item=JT_all_UP label="up" 
+		Switch item=JT_all_DOWN label="down" 
+	}
+//
+	Frame label="Jalousien" {
+//  Sitemap for all Jalousies
+		Switch item=JT_WZ1_UP label="WZ1 AUF" 
+		Switch item=JT_WZ1_DOWN label="WZ1 AB" 
+		Slider item=JM_WZ1_level label="WZ1 LEVEL [%.0f]"
+//
+		Switch item=JT_B1_UP label="B1 AUF" 
+		Switch item=JT_B1_DOWN label="B1 AB" 
+		Slider item=JM_B1_level label="B1 LEVEL [%.0f]"
+//
+		Switch item=JT_B2_UP label="B2 AUF" 
+		Switch item=JT_B2_DOWN label="B2 AB" 
+		Slider item=JM_B2_level label="B2 LEVEL [%.0f]"
+//
+		Switch item=JT_B3_UP label="B3 AUF" 
+		Switch item=JT_B3_DOWN label="B3 AB" 
+		Slider item=JM_B3_level label="B3 LEVEL [%.0f]"
+//
+		Switch item=JT1_B4_UP label="JT1 B4 AUF" 
+		Switch item=JT1_B4_DOWN label="JT1 B4 AB" 
+		Slider item=JM1_B4_level label="JT1 B4 LEVEL [%.0f]"
+//
+		Switch item=JT2_B4_UP label="JT2 B4 AUF" 
+		Switch item=JT2_B4_DOWN label="JT2 B4 AB" 
+		Slider item=JM2_B4_level label="JT2 B4 LEVEL [%.0f]"
+//
+		Switch item=JT1_SZ1_UP label="JT1 SZ1 AUF" 
+		Switch item=JT1_SZ1_DOWN label="JT1 SZ1 AB" 
+		Slider item=JM1_SZ1_level label="JT1 SZ1 LEVEL [%.0f]"
+//
+		Switch item=JT2_SZ1_UP label="JT2 SZ1 AUF" 
+		Switch item=JT2_SZ1_DOWN label="JT2 SZ1 AB" 
+		Slider item=JM2_SZ1_level label="JT2 SZ1 LEVEL [%.0f]"
+//
+    }
+}
+

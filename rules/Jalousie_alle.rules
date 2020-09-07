@@ -1,0 +1,30 @@
+//
+//	For use this template search for "Bx" and replace it with the right value
+//  JM_Bx_ACTIVITY_STATE = STABLE / UP / DOWN /
+//
+// **************************************************************************
+rule "Jalousie all up"
+//
+when 
+  Item JT_all_UP changed to OFF
+then
+//
+  logInfo("","INFO-001: Der Taster JT_all_UP wurde betaetigt")
+//  logInfo("","INFO-002: The state of JM_all_ACTIVITY_STATE is >>> " + JM_all_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(gJalousie,OFF)
+  sendCommand(JT_all_UP,ON)
+  //
+end
+
+// **************************************************************************
+rule "Jalousie all down"
+when 
+  Item JT_all_DOWN changed to ON
+then
+//
+  logInfo("","INFO-011: Taster JT_all_DOWN CHANGED to ON")
+//  logInfo("","INFO-012: The state of JM_all_ACTIVITY_STATE is >>> " + JM_all_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(gJalousie,ON)
+  sendCommand(JT_all_DOWN,OFF)
+  //
+end

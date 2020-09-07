@@ -1,0 +1,23 @@
+// *** Gruppen nur in dieser Datei, weiss derzeit nicht ob das funktionert, allenfalls in separate Datei auslagern
+
+
+// Overarching group
+Group Javelstreet
+
+// Location perspective
+Group GroundFloor (Javelstreet)
+Group FirstFloor (Javelstreet)
+Group Esszimmer (GroundFloor)
+Group Gallerie (FirstFloor)
+Group Kueche (GroundFloor)
+Group Wohnzimmer (GroundFloor)
+
+// Functional perspective
+Group Schalter (Javelstreet)
+
+
+//Items
+Switch   MyStrom_01_Switch  "MyStrom Steckdose 1" <switch> (Kueche, Schalter) { http=">[ON:GET:http://192.168.3.122/relay?state=1] >[OFF:GET:http://192.168.3.122/relay?state=0]" } 
+Switch   MyStrom_02_Switch  "MyStrom Steckdose 2" <switch> (Esszimmer, Schalter) { http=">[ON:GET:http://192.168.3.124/relay?state=1] >[OFF:GET:http://192.168.3.124/relay?state=0]" }
+Switch   MyStrom_03_Switch  "MyStrom Steckdose 3" <switch> (Wohnzimmer, Schalter) { http=">[ON:GET:http://192.168.3.121/relay?state=1] >[OFF:GET:http://192.168.3.121/relay?state=0]" }
+Switch   MyStrom_04_Switch  "MyStrom Steckdose 4" <switch> (Gallerie, Schalter) { http=">[ON:GET:http://192.168.3.123/relay?state=1] >[OFF:GET:http://192.168.3.123/relay?state=0]" }

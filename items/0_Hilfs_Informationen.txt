@@ -1,0 +1,11 @@
+
+Jalousie getestete Parameter direkt ab Homematic
+
+Lamellenposition:
+Beispiel Item (Variable) für Büro1: JM_B1_level_2 
+80% = offen
+20% = geschlossen
+
+Jalousieposition:
+99% = offen (oben)
+0% = zu (unten)

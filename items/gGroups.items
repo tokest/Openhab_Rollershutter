@@ -1,0 +1,19 @@
+// Definition der Gruppen
+//
+// Konvention: Gruppennamen beginnen immer mit einem kleinen g
+//
+// Gruppe für alle Jalousien
+Group gJalousie // alle Rollos ()
+//
+// Items fuer die Steuerung aller Jalousien gleichzeitig
+Switch JT_all_UP "Jalousie all up"
+Switch JT_all_DOWN "Jalousie all down"
+//
+//
+//Group gEG // Gruppe Erdgeschoss 
+//Group gOG // Gruppe Obergeschoss
+//
+//Group Buero1 "Buero1" <Buero1> (Firstfloor)
+//
+//Group Wohnzimmer "Wohnzimmer" <Wohnzimmer> (Groundfloor)
+//Group Esszimmer "Esszimmer" <Esszimmer> (Groundfloor)

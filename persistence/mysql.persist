@@ -1,0 +1,10 @@
+Strategies {
+   everyMinute : "0 * * * * ?"
+   everyHour   : "1 0 * * * ?"
+   everyDay    : "0 0 0 * * ?"
+   default = everyChange
+}
+ 
+Items {
+       * : strategy = everyChange, everyDay, restoreOnStartup          
+    }

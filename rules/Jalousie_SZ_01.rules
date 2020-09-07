@@ -1,0 +1,89 @@
+//
+//	For use this template search for "Jxx_SZx" and replace it with the right value
+//  Jx_SZx_ACTIVITY_STATE = STABLE / UP / DOWN /
+//
+// **************************************************************************
+rule "Jalousie SZ11 up"
+//
+when 
+  Item JT1_SZ1_UP changed to OFF
+then
+//
+  logInfo("","INFO-001: Der Taster JT1_SZ1_UP wurde betaetigt")
+  logInfo("","INFO-002: The state of JM1_SZ1_ACTIVITY_STATE is >>> " + JM1_SZ1_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(JT1_SZ1_UP,ON)
+  //
+  if (JM1_SZ1_ACTIVITY_STATE.state == "STABLE") {
+    sendCommand(JM1_SZ1_level,99)	
+    logInfo("","INFO-003: JM_SZ11 goes UP because it was STABLE")
+  } else {
+      if (JM1_SZ1_ACTIVITY_STATE.state == "DOWN") {
+      logInfo("","INFO-004: JM_SZ11 stopps because was going DOWN")
+      sendCommand(JM1_SZ1_STOP,ON)
+    }    
+  }
+end
+
+// **************************************************************************
+rule "Jalousie SZ11 down"
+when 
+  Item JT1_SZ1_DOWN changed to ON
+then
+//
+  logInfo("","INFO-011: Taster JT1_SZ1_DOWN CHANGED to ON")
+  logInfo("","INFO-012: The state of JM1_SZ1_ACTIVITY_STATE is >>> " + JM1_SZ1_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(JT1_SZ1_DOWN,OFF)
+  //
+  if (JM1_SZ1_ACTIVITY_STATE.state == "STABLE") {
+    sendCommand(JM1_SZ1_level,0)
+    logInfo("","INFO-013: JM1_SZ1 goes DOWN because it was STABLE")
+  } else {
+      if (JM1_SZ1_ACTIVITY_STATE.state == "UP") {
+      logInfo("","INFO-014: JM1_SZ1 stopps because was going UP")
+      sendCommand(JM1_SZ1_STOP,ON)
+    }    
+  }
+end
+
+// **************************************************************************
+rule "Jalousie SZ12 up"
+//
+when 
+  Item JT2_SZ1_UP changed to OFF
+then
+//
+  logInfo("","INFO-001: Der Taster JT2_SZ1_UP wurde betaetigt")
+  logInfo("","INFO-002: The state of JM2_SZ1_ACTIVITY_STATE is >>> " + JM2_SZ1_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(JT2_SZ1_UP,ON)
+  //
+  if (JM2_SZ1_ACTIVITY_STATE.state == "STABLE") {
+    sendCommand(JM2_SZ1_level,99)	
+    logInfo("","INFO-003: JM_SZ12 goes UP because it was STABLE")
+  } else {
+      if (JM2_SZ1_ACTIVITY_STATE.state == "DOWN") {
+      logInfo("","INFO-004: JM_SZ12 stopps because was going DOWN")
+      sendCommand(JM2_SZ1_STOP,ON)
+    }    
+  }
+end
+
+// **************************************************************************
+rule "Jalousie SZ12 down"
+when 
+  Item JT2_SZ1_DOWN changed to ON
+then
+//
+  logInfo("","INFO-011: Taster JT2_SZ1_DOWN CHANGED to ON")
+  logInfo("","INFO-012: The state of JM2_SZ1_ACTIVITY_STATE is >>> " + JM2_SZ1_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(JT2_SZ1_DOWN,OFF)
+  //
+  if (JM2_SZ1_ACTIVITY_STATE.state == "STABLE") {
+    sendCommand(JM2_SZ1_level,0)
+    logInfo("","INFO-013: JM_SZ12 goes DOWN because it was STABLE")
+  } else {
+      if (JM2_SZ1_ACTIVITY_STATE.state == "UP") {
+      logInfo("","INFO-014: JM_SZ12 stopps because was going UP")
+      sendCommand(JM2_SZ1_STOP,ON)
+    }    
+  }
+end

@@ -1,0 +1,10 @@
+
+Switch Esszimmer_Light "Esszimmer Licht" {
+        channel="enocean:classicDevice:gtwy:cd10:virtualRockerswitchA",
+        channel="enocean:classicDevice:gtwy:cd10:Listener1",
+        channel="enocean:classicDevice:gtwy:cd10:Listener2"
+ 
+}
+
+// Items
+Switch   Aktor_Esszimmerlicht  "Hintergrundlicht Esszimmer" <switch> (Esszimmer, Schalter) {channel="homematic:HmIP-FSM:3014F711A0001F9A49923BBD:000898A9ABA17C:2#STATE"}
