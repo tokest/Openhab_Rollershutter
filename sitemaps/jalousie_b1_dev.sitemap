@@ -4,9 +4,9 @@ sitemap jalousie_b1_dev label="test JALOUSIE B1" {
 	Switch item=JT_B1_UP label="AUF" 
 	Switch item=JT_B1_DOWN label="AB" 
 	Switch item=JM_B1_STOP label="Jalousie B1 Stop" 	
-	Slider item=JM_B1_level label="Jalousie LEVEL [%.2f]"
-	Text item=JM_B1_level label="Jalousie LEVEL = [%s]"
-	Slider item=JM_B1_level_2 label="JM_B1_level_2 [%.2f]"
+	Slider item=JM_B1_level label="Jalousie LEVEL [%.2f]" icon="rollershutter"
+	Text item=JM_B1_level label="Jalousie LEVEL = [%s]" icon="rollershutter"
+	Slider item=JM_B1_level_2 label="JM_B1_level_2 [%.2f]" 
     }
 }
 
