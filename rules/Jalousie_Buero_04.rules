@@ -14,7 +14,8 @@ then
   sendCommand(JT1_B4_UP,ON)
   //
   if (JM1_B4_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM1_B4_level,99)	
+    sendCommand(JM1_B4_level,0)
+	sendCommand(JM1_B4_level_2,0)	
     logInfo("","INFO-003: JM1_B4 goes UP because it was STABLE")
   } else {
       if (JM1_B4_ACTIVITY_STATE.state == "DOWN") {
@@ -35,7 +36,8 @@ then
   sendCommand(JT1_B4_DOWN,OFF)
   //
   if (JM1_B4_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM1_B4_level,0)
+    sendCommand(JM1_B4_level,99)
+    sendCommand(JM1_B4_level_2,99)
     logInfo("","INFO-013: JM1_B4 goes DOWN because it was STABLE")
   } else {
       if (JM1_B4_ACTIVITY_STATE.state == "UP") {
@@ -57,7 +59,8 @@ then
   sendCommand(JT2_B4_UP,ON)
   //
   if (JM2_B4_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM2_B4_level,99)	
+    sendCommand(JM2_B4_level,0)	
+	sendCommand(JM2_B4_level_2,0)	
     logInfo("","INFO-003: JM2_B4 goes UP because it was STABLE")
   } else {
       if (JM2_B4_ACTIVITY_STATE.state == "DOWN") {
@@ -78,7 +81,8 @@ then
   sendCommand(JT2_B4_DOWN,OFF)
   //
   if (JM2_B4_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM2_B4_level,0)
+    sendCommand(JM2_B4_level,99)
+    sendCommand(JM2_B4_level_2,99)
     logInfo("","INFO-013: JM2_B4 goes DOWN because it was STABLE")
   } else {
       if (JM2_B4_ACTIVITY_STATE.state == "UP") {

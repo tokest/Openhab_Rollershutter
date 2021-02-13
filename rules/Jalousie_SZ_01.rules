@@ -14,7 +14,8 @@ then
   sendCommand(JT1_SZ1_UP,ON)
   //
   if (JM1_SZ1_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM1_SZ1_level,99)	
+    sendCommand(JM1_SZ1_level,0)
+	sendCommand(JM1_SZ1_level_2,0)	
     logInfo("","INFO-003: JM_SZ11 goes UP because it was STABLE")
   } else {
       if (JM1_SZ1_ACTIVITY_STATE.state == "DOWN") {
@@ -35,7 +36,7 @@ then
   sendCommand(JT1_SZ1_DOWN,OFF)
   //
   if (JM1_SZ1_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM1_SZ1_level,0)
+    sendCommand(JM1_SZ1_level,99)
     logInfo("","INFO-013: JM1_SZ1 goes DOWN because it was STABLE")
   } else {
       if (JM1_SZ1_ACTIVITY_STATE.state == "UP") {
@@ -57,7 +58,8 @@ then
   sendCommand(JT2_SZ1_UP,ON)
   //
   if (JM2_SZ1_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM2_SZ1_level,99)	
+    sendCommand(JM2_SZ1_level,0)
+	sendCommand(JM2_SZ1_level_2,0)
     logInfo("","INFO-003: JM_SZ12 goes UP because it was STABLE")
   } else {
       if (JM2_SZ1_ACTIVITY_STATE.state == "DOWN") {
@@ -78,7 +80,7 @@ then
   sendCommand(JT2_SZ1_DOWN,OFF)
   //
   if (JM2_SZ1_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM2_SZ1_level,0)
+    sendCommand(JM2_SZ1_level,99)
     logInfo("","INFO-013: JM_SZ12 goes DOWN because it was STABLE")
   } else {
       if (JM2_SZ1_ACTIVITY_STATE.state == "UP") {

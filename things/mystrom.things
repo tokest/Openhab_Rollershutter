@@ -1,0 +1,7 @@
+Thing mystrom:mystromplug:30aea491e078 "MyStrom_01_Switch" [hostname="192.168.3.122"]
+Thing mystrom:mystromplug:30aea49451a8 "MyStrom_02_Switch" [hostname="192.168.3.124"]
+Thing mystrom:mystromplug:840d8e02dc04 "MyStrom_03_Switch" [hostname="192.168.3.121"]
+Thing mystrom:mystromplug:30AEA493B844 "MyStrom_04_Switch" [hostname="192.168.3.123"]
+
+
+// Thing mystrom:mystromplug:30aea491e078 "Plugkaffee" [hostname="192.168.3.122"]

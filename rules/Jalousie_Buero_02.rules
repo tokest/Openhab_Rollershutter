@@ -14,7 +14,8 @@ then
   sendCommand(JT_B2_UP,ON)
   //
   if (JM_B2_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM_B2_level,99)	
+    sendCommand(JM_B2_level,0)	
+	sendCommand(JM_B2_level_2,0)
     logInfo("","INFO-003: JM_B2 goes UP because it was STABLE")
   } else {
       if (JM_B2_ACTIVITY_STATE.state == "DOWN") {
@@ -35,7 +36,7 @@ then
   sendCommand(JT_B2_DOWN,OFF)
   //
   if (JM_B2_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM_B2_level,0)
+    sendCommand(JM_B2_level,99)
     logInfo("","INFO-013: JM_B2 goes DOWN because it was STABLE")
   } else {
       if (JM_B2_ACTIVITY_STATE.state == "UP") {

@@ -1,0 +1,27 @@
+sitemap verbrauch label="GRAPHEN Verbrauch" 
+{
+	Frame label="Plug_01 Küche " 
+	{       //Chart item=Plug_01_Power period=D refresh=60000 service="mysql"
+		Chart item=Plug_01_Power period=W refresh=60000 service="mysql"
+		//Chart item=Plug_01_Power period=M refresh=60000 service="mysql"
+		//Chart item=Plug_01_Power period=Y refresh=60000 service="mysql"
+	}
+	Frame label="Plug_02 Sitzplatz" 
+	{	//Chart item=Plug_02_Power period=M refresh=60000 service="mysql"
+	        Chart item=Plug_02_Power period=W refresh=60000 service="mysql"
+                //Chart item=Plug_02_Power period=M refresh=60000 service="mysql"
+                //Chart item=Plug_02_Power period=Y refresh=60000 service="mysql"
+	}
+	Frame label="Plug_03 Wohnzimmer" 
+	{       //Chart item=Plug_03_Power period=M refresh=60000 service="mysql"
+                Chart item=Plug_03_Power period=W refresh=60000 service="mysql"
+                //Chart item=Plug_03_Power period=M refresh=60000 service="mysql"
+                //Chart item=Plug_03_Power period=Y refresh=60000 service="mysql"
+	}
+	Frame label="Plug_04 Gallerie" 
+	{       //Chart item=Plug_04_Power period=D refresh=60000 service="mysql"
+		Chart item=Plug_04_Power period=W refresh=60000 service="mysql"
+		//Chart item=Plug_04_Power period=M refresh=60000 service="mysql"
+		//Chart item=Plug_04_Power period=Y refresh=60000 service="mysql"
+	}
+}

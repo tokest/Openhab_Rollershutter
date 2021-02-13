@@ -9,7 +9,7 @@ sitemap jalousien label="JALOUSIEN" {
 //  Sitemap for all Jalousies
 		Switch item=JT_WZ1_UP label="WZ1 AUF" 
 		Switch item=JT_WZ1_DOWN label="WZ1 AB" 
-		Slider item=JM_WZ1_level label="WZ1 LEVEL [%.0f]"
+		Slider item=JM_WZ1_level label="WZ1 LEVEL [%.0f]"  
 //
 		Switch item=JT_B1_UP label="B1 AUF" 
 		Switch item=JT_B1_DOWN label="B1 AB" 

@@ -1,0 +1,20 @@
+sitemap jalousie_wz_dev label="test JALOUSIE WZ" {
+       
+	Frame label="Testeintrag Jalousie" {
+// JT_WZ1_UP Taster auf Sitemap
+	Switch item=JT_WZ1_UP label="AUF" 
+	Switch item=JT_WZ1_DOWN label="AB" 
+// Schalter for test stop only
+	Switch item=JM_WZ1_STOP label="Jalousie WZ Stop" 	
+//	Switch item=JM_WZ1_STOP label="Jalousie WZ Stop" mappings=[ON="STOP", OFF="STOP"]	
+//	Switch item=JM_WZ1_STOP label="Jalousie Wohnzimmer EIN" mappings=[ON="STOP"]
+//	Switch item=JM_WZ1_STOP label="Jalousie Wohnzimmer AUS" mappings=[OFF="STOP"] 
+//	Switch item=JM_WZ1_level
+//	Switch item=JM_WZ1_level label="Jalousie hoch" mappings=[0="ON"]
+//	Switch item=JM_WZ1_level label="Jalousie runter" mappings=[100="OFF"] 
+// Version mit Slider funktioniert, dynamische icon muss beim item ausgewaehlt werden (ist aber verkehrt zu homematic):
+	Slider item=JM_WZ1_level label="WZ LEVEL [%.2f]"
+	Text item=JM_WZ1_level label="WZ LEVEL [%s]"
+    }
+}
+

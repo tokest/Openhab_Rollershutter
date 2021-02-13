@@ -1,20 +1,18 @@
 sitemap licht label="LICHT" {
         Frame label="LICHT Esszimmer" {
                 Switch item=Aktor_Esszimmerlicht label="TOGGLE"
-		Switch item=Aktor_Esszimmerlicht label="EIN" mappings=[ON="On"]
-		Switch item=Aktor_Esszimmerlicht label="AUS" mappings=[OFF="Off"]
+	//	Switch item=Aktor_Esszimmerlicht label="EIN" mappings=[ON="On"]
+	//	Switch item=Aktor_Esszimmerlicht label="AUS" mappings=[OFF="Off"]
         }
-		Frame label="LICHT Schiebetuere aussen" {
-                Switch item=MyStrom_02_Switch
-				//Chart item=MyStrom_02_Switch period=W refresh=60000 service="mysql" 
-		}
+	Frame label="LICHT Schiebetuere aussen" {
+                Switch item=MyStrom_02_Switch 
+	}
         Frame label="LICHT SL Wohnzimmer" {
                 Switch item=MyStrom_03_Switch
-                //Chart item=MyStrom_03_Switch period=W refresh=60000 service="mysql"
         }
         Frame label="LICHT SL Gallerie" {
                 Switch item=MyStrom_04_Switch
-                Chart item=MyStrom_04_Switch period=W refresh=60000 service="mysql"
+        //      Chart item=Plug_04_Temperature period=D refresh=60000 service="mysql"
         }
 }
 

@@ -17,7 +17,8 @@ then
   sendCommand(JT_WZ1_UP,ON)
   //
   if (JM_WZ1_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM_WZ1_level,99)	
+    sendCommand(JM_WZ1_level,0)
+	sendCommand(JM_WZ1_level_2,0)
     logInfo("","INFO-003: JM_WZ1 goes UP because it was STABLE")
   } else {
       if (JM_WZ1_ACTIVITY_STATE.state == "DOWN") {
@@ -38,7 +39,7 @@ then
   sendCommand(JT_WZ1_DOWN,OFF)
   //
   if (JM_WZ1_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM_WZ1_level,0)
+    sendCommand(JM_WZ1_level,99)
     logInfo("","INFO-013: JM_WZ1 goes DOWN because it was STABLE")
   } else {
       if (JM_WZ1_ACTIVITY_STATE.state == "UP") {
