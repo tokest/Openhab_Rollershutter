@@ -1,20 +1,20 @@
 // Items
 Switch JT1_B4_UP "Jalousie 1 Taster B4 UP" <switch> (Firstfloor, Buero4, gJalousie) {
 	channel="enocean:classicDevice:gtwy:cd07:virtualRockerswitchA",
-	channel="enocean:classicDevice:gtwy:cd07:Listener1"
+	channel="enocean:classicDevice:gtwy:cd07:Listener17"
 } 
 Switch JT1_B4_DOWN "Jalousie 1 Taster B4 DOWN" <switch> (Firstfloor, Buero4, gJalousie) {
 	channel="enocean:classicDevice:gtwy:cd07:virtualRockerswitchA",
-	channel="enocean:classicDevice:gtwy:cd07:Listener1"
+	channel="enocean:classicDevice:gtwy:cd07:Listener17"
 } 
 
 Switch JT2_B4_UP "Jalousie 2 Taster B4 UP" <switch> (Firstfloor, Buero4, gJalousie) {
 	channel="enocean:classicDevice:gtwy:cd08:virtualRockerswitchA",
-	channel="enocean:classicDevice:gtwy:cd08:Listener1"
+	channel="enocean:classicDevice:gtwy:cd08:Listener18"
 } 
 Switch JT2_B4_DOWN "Jalousie 2 Taster B4 DOWN" <switch> (Firstfloor, Buero4, gJalousie) {
 	channel="enocean:classicDevice:gtwy:cd08:virtualRockerswitchA",
-	channel="enocean:classicDevice:gtwy:cd08:Listener1"
+	channel="enocean:classicDevice:gtwy:cd08:Listener18"
 } 
 
 Rollershutter JM1_B4_T_LEVEL "Jalousie 1 Buero 4" <window> (Groundfloor, Buero4) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B4:3#LEVEL"}

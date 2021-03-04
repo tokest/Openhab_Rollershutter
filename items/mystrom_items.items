@@ -2,22 +2,32 @@
 
 
 // Overarching group
-Group Javelstreet
-
+Group Speerstrasse
 // Location perspective
-Group GroundFloor (Javelstreet)
-Group FirstFloor (Javelstreet)
+Group GroundFloor (Speerstrasse)
+Group FirstFloor (Speerstrasse)
 Group Esszimmer (GroundFloor)
 Group Gallerie (FirstFloor)
 Group Kueche (GroundFloor)
 Group Wohnzimmer (GroundFloor)
 
 // Functional perspective
-Group Schalter (Javelstreet)
-
+Group Schalter (Speerstrasse)
 
 //Items
 Switch   MyStrom_01_Switch  "MyStrom Steckdose 1" <switch> (Kueche, Schalter) { http=">[ON:GET:http://192.168.3.122/relay?state=1] >[OFF:GET:http://192.168.3.122/relay?state=0]" } 
+Number:Temperature Plug_01_Temperature "Temp: [%.2f °C]" <sensor> (Kueche, Sensor) {channel="mystrom:mystromplug:30aea491e078:temperature"}
+Number:Power Plug_01_Power "Power: [%.2f W]" <sensor> {channel="mystrom:mystromplug:30aea491e078:power"}
+
 Switch   MyStrom_02_Switch  "MyStrom Steckdose 2" <switch> (Esszimmer, Schalter) { http=">[ON:GET:http://192.168.3.124/relay?state=1] >[OFF:GET:http://192.168.3.124/relay?state=0]" }
+Number:Temperature Plug_02_Temperature "Temp: [%.2f °C]" <sensor> (Kueche, Sensor) {channel="mystrom:mystromplug:30aea49451a8:temperature"}
+Number:Power Plug_02_Power "Power: [%.2f W]" <sensor> {channel="mystrom:mystromplug:30aea49451a8:power"}
+
 Switch   MyStrom_03_Switch  "MyStrom Steckdose 3" <switch> (Wohnzimmer, Schalter) { http=">[ON:GET:http://192.168.3.121/relay?state=1] >[OFF:GET:http://192.168.3.121/relay?state=0]" }
+Number:Temperature Plug_03_Temperature "Temp: [%.2f °C]" <sensor> (Kueche, Sensor) {channel="mystrom:mystromplug:840d8e02dc04:temperature"}
+Number:Power Plug_03_Power "Power: [%.2f W]" <sensor> {channel="mystrom:mystromplug:840d8e02dc04:power"}
+
 Switch   MyStrom_04_Switch  "MyStrom Steckdose 4" <switch> (Gallerie, Schalter) { http=">[ON:GET:http://192.168.3.123/relay?state=1] >[OFF:GET:http://192.168.3.123/relay?state=0]" }
+Number:Temperature Plug_04_Temperature "Temp: [%.2f °C]" <sensor> (Kueche, Sensor) {channel="mystrom:mystromplug:30AEA493B844:temperature"}
+Number:Power Plug_04_Power "Power: [%.2f W]" <sensor> {channel="mystrom:mystromplug:30AEA493B844:power"}
+

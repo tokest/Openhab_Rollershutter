@@ -1,0 +1,4 @@
+# For security reasons all commands that are used by the exec binding or transformation need to be whitelisted.
+# Every command needs to be listed on a separate line below.
+/etc/openhab/scripts/mystrom_plug_03_on.sh
+/etc/openhab/scripts/mystrom_plug_03_off.sh

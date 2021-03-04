@@ -16,4 +16,4 @@ waitTimeout=60
 # Use MySQL Server time to store item values (=false) or use openHAB Server time (=true).
 # For new installations, its recommend to set "localtime=true".
 # (optional, defaults to false)
-localtime=true
+#localtime=true

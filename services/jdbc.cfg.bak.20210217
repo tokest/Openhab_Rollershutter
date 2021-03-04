@@ -21,17 +21,17 @@
 # url=jdbc:mysql://192.168.0.1:3306/testMysql
 # url=jdbc:postgresql://192.168.0.1:5432/testPostgresql
 # url=jdbc:sqlite:./testSqlite.db
-url=jdbc:mysql://localhost:3306/openhab
+ url=jdbc:mysql://localhost:3306/openhab
 
 # required database user
-user=openhab
+ user=openhab
 
 # required database password
-password=openhab
+ password=openhab
 
 # E R R O R   H A N D L I N G
 # optional when Service is deactivated (optional, default: 0 -> ignore) 
-#errReconnectThreshold=
+ errReconnectThreshold=2
 
 # I T E M   O P E R A T I O N S
 # optional tweaking SQL datatypes
@@ -45,13 +45,13 @@ password=openhab
 #sqltype.DATETIME      =   DATETIME
 #sqltype.DIMMER        =   TINYINT
 #sqltype.LOCATION      =   VARCHAR(30)
-sqltype.NUMBER        =   DOUBLE
+#sqltype.NUMBER        =   DOUBLE
 #sqltype.ROLLERSHUTTER =   TINYINT
-sqltype.STRING        =   VARCHAR(65500)
+#sqltype.STRING        =   VARCHAR(65500)
 #sqltype.SWITCH        =   VARCHAR(6)
 
 # For Itemtype "Number" default decimal digit count (optional, default: 3) 
-numberDecimalcount=3
+#numberDecimalcount=
 
 # T A B L E   O P E R A T I O N S
 # Tablename Prefix String (optional, default: "item") 
@@ -78,4 +78,4 @@ numberDecimalcount=3
 
 # T I M E K E E P I N G
 # (optional, default: false) 
-enableLogTime=true
+ enableLogTime=true
