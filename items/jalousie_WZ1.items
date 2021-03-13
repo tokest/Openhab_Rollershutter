@@ -1,11 +1,11 @@
 //Items
 //Switch JT_WZ1_UP "Jalousie Taster WZ1 UP" <switch> (Groundfloor, Wohnzimmer, gJalousie) {
 //	channel="enocean:classicDevice:gtwy:cd01:virtualRockerswitchB",
-//	channel="enocean:classicDevice:gtwy:cd01:Listener1",
+//	channel="enocean:classicDevice:gtwy:cd01:Listener11",
 //} 
 //Switch JT_WZ1_DOWN "Jalousie Taster WZ1 DOWN" <switch> (Groundfloor, Wohnzimmer, gJalousie) {
 //	channel="enocean:classicDevice:gtwy:cd01:virtualRockerswitchB",
-//	channel="enocean:classicDevice:gtwy:cd01:Listener1",
+//	channel="enocean:classicDevice:gtwy:cd01:Listener11",
 //} 
 
 Rollershutter JM_WZ1_T_LEVEL "Jalousie Wohnzimmer" <window> (Groundfloor, Wohnzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A46131:3#LEVEL"}

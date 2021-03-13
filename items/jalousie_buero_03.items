@@ -1,11 +1,11 @@
 // Items
 Switch JT_B3_UP "Jalousie Taster B3 UP" <switch> (Firstfloor, Buero3, gJalousie) {
 	channel="enocean:classicDevice:gtwy:cd04:virtualRockerswitchA",
-	channel="enocean:classicDevice:gtwy:cd04:Listener1"
+	channel="enocean:classicDevice:gtwy:cd04:Listener14"
 } 
 Switch JT_B3_DOWN "Jalousie Taster B3 DOWN" <switch> (Firstfloor, Buero3, gJalousie) {
 	channel="enocean:classicDevice:gtwy:cd04:virtualRockerswitchA",
-	channel="enocean:classicDevice:gtwy:cd04:Listener1"
+	channel="enocean:classicDevice:gtwy:cd04:Listener14"
 } 
 
 Rollershutter JM_B3_T_LEVEL "Jalousie Buero 3" <window> (Groundfloor, Buero3) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19E3:3#LEVEL"}
