@@ -1,0 +1,46 @@
+// Items
+Switch JT_SZ1_1_UP "Jalousie 1 Taster SZ1 UP" (Firstfloor, Schlafzimmer, gJalousie) {
+	channel="enocean:classicDevice:gtwy:cd05:virtualRockerswitchA",
+	channel="enocean:classicDevice:gtwy:cd05:Listener15"
+} 
+Switch JT_SZ1_1_DOWN "Jalousie 1 Taster SZ1 DOWN" (Firstfloor, Schlafzimmer, gJalousie) {
+	channel="enocean:classicDevice:gtwy:cd05:virtualRockerswitchA",
+	channel="enocean:classicDevice:gtwy:cd05:Listener15"
+} 
+
+Switch JT_SZ1_2_UP "Jalousie 2 Taster SZ1 UP" (Firstfloor, Schlafzimmer,gJalousie) {
+	channel="enocean:classicDevice:gtwy:cd06:virtualRockerswitchA",
+	channel="enocean:classicDevice:gtwy:cd06:Listener16"
+} 
+Switch JT_SZ1_2_DOWN "Jalousie 2 Taster SZ1 DOWN" (Firstfloor, Schlafzimmer, gJalousie) {
+	channel="enocean:classicDevice:gtwy:cd06:virtualRockerswitchA",
+	channel="enocean:classicDevice:gtwy:cd06:Listener16"
+} 
+
+Rollershutter JM_SZ1_1_T_LEVEL "Jalousie 1 Schlafzimmer" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:3#LEVEL"}
+String JM_SZ1_1_T_ACTIVITY_STATE "T_ACTIVITY_STATE" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:3#ACTIVITY_STATE"}
+Rollershutter JM_SZ1_1_T_LEVEL_2 "T_LEVEL_2" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:3#LEVEL_2"}
+String JM_SZ1_1_T_LEVEL_STATUS "T_LEVEL_STATUS" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:3#LEVEL_STATUS"}
+String JM_SZ1_1_T_PROCESS "T_PROCESS" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:3#PROCESS"}
+String JM_SZ1_1_T_SECTION "T_SECTION" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:3#SECTION"}
+String JM_SZ1_1_T_SECTION_STATUS "T_SECTION_STATUS" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:3#SECTION_STATUS"}
+Dimmer JM_SZ1_1_level "Level" <rollershutter> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:4#LEVEL"}
+Dimmer JM_SZ1_1_level_2 "Level 2" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:4#LEVEL_2"}
+String JM_SZ1_1_LEVEL_STATUS "LEVEL_STATUS" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:4#LEVEL_STATUS"}
+String JM_SZ1_1_ACTIVITY_STATE "ACTIVITY_STATE" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:4#ACTIVITY_STATE"}
+Switch JM_SZ1_1_STOP "STOP" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19BF:4#STOP"}
+String JM_SZ1_1_Status "J1 SZ Status" 
+
+Rollershutter JM_SZ1_2_T_LEVEL "Jalousie 2 Schlafzimmer" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:3#LEVEL"}
+String JM_SZ1_2_T_ACTIVITY_STATE "T_ACTIVITY_STATE" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:3#ACTIVITY_STATE"}
+Rollershutter JM_SZ1_2_T_LEVEL_2 "T_LEVEL_2" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:3#LEVEL_2"}
+String JM_SZ1_2_T_LEVEL_STATUS "T_LEVEL_STATUS" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:3#LEVEL_STATUS"}
+String JM_SZ1_2_T_PROCESS "T_PROCESS" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:3#PROCESS"}
+String JM_SZ1_2_T_SECTION "T_SECTION" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:3#SECTION"}
+String JM_SZ1_2_T_SECTION_STATUS "T_SECTION_STATUS" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:3#SECTION_STATUS"}
+Dimmer JM_SZ1_2_level "Level" <rollershutter> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:4#LEVEL"}
+Dimmer JM_SZ1_2_level_2 "Level 2" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:4#LEVEL_2"}
+String JM_SZ1_2_LEVEL_STATUS "LEVEL_STATUS" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:4#LEVEL_STATUS"}
+String JM_SZ1_2_ACTIVITY_STATE "ACTIVITY_STATE" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:4#ACTIVITY_STATE"}
+Switch JM_SZ1_2_STOP "STOP" <window> (Groundfloor, Schlafzimmer) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139A49A82F99:4#STOP"}
+String JM_SZ1_2_Status "J2 SZ Status" 

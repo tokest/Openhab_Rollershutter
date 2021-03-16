@@ -1,50 +1,50 @@
 //
 //	For use this template search for "Bx" and replace it with the right value
-//  JM_WZ1_ACTIVITY_STATE = STABLE / UP / DOWN /
+//  JM_WZ1_1_ACTIVITY_STATE = STABLE / UP / DOWN /
 //
 //  Why is this file empty? Its because of not using an enocean taster > no rules are necessary
 //  Control of the homematic actor is given over physical power connection
 //  For control over sitemap rule is implemented also
 //
-rule "Jalousie WZ1 up"
+rule "Jalousie WZ1_1 up"
 //
 when 
-  Item JT_WZ1_UP changed to OFF
+  Item JT_WZ1_1_UP changed to OFF
 then
 //
-  logInfo("","INFO-001: Der Taster JWZ1-UP wurde betaetigt")
-  logInfo("","INFO-002: The state of JM_WZ1_ACTIVITY_STATE is >>> " + JM_WZ1_ACTIVITY_STATE.state.toString + " <<<")
-  sendCommand(JT_WZ1_UP,ON)
+  logInfo("","INFO-001: Der Taster JWZ1_1-UP wurde betaetigt")
+  logInfo("","INFO-002: The state of JM_WZ1_1_ACTIVITY_STATE is >>> " + JM_WZ1_1_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(JT_WZ1_1_UP,ON)
   //
-  if (JM_WZ1_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM_WZ1_level,0)
-	sendCommand(JM_WZ1_level_2,0)
-    logInfo("","INFO-003: JM_WZ1 goes UP because it was STABLE")
+  if (JM_WZ1_1_ACTIVITY_STATE.state == "STABLE") {
+    sendCommand(JM_WZ1_1_level,0)
+	sendCommand(JM_WZ1_1_level_2,0)
+    logInfo("","INFO-003: JM_WZ1_1 goes UP because it was STABLE")
   } else {
-      if (JM_WZ1_ACTIVITY_STATE.state == "DOWN") {
-      logInfo("","INFO-004: JM_WZ1 stopps because was going DOWN")
-      sendCommand(JM_WZ1_STOP,ON)
+      if (JM_WZ1_1_ACTIVITY_STATE.state == "DOWN") {
+      logInfo("","INFO-004: JM_WZ1_1 stopps because was going DOWN")
+      sendCommand(JM_WZ1_1_STOP,ON)
     }    
   }
 end
 
 // **************************************************************************
-rule "Jalousie WZ1 down"
+rule "Jalousie WZ1_1 down"
 when 
-  Item JT_WZ1_DOWN changed to ON
+  Item JT_WZ1_1_DOWN changed to ON
 then
 //
-  logInfo("","INFO-011: Taster JT_WZ1_DOWN CHANGED to ON")
-  logInfo("","INFO-012: The state of JM_WZ1_ACTIVITY_STATE is >>> " + JM_WZ1_ACTIVITY_STATE.state.toString + " <<<")
-  sendCommand(JT_WZ1_DOWN,OFF)
+  logInfo("","INFO-011: Taster JT_WZ1_1_DOWN CHANGED to ON")
+  logInfo("","INFO-012: The state of JM_WZ1_1_ACTIVITY_STATE is >>> " + JM_WZ1_1_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(JT_WZ1_1_DOWN,OFF)
   //
-  if (JM_WZ1_ACTIVITY_STATE.state == "STABLE") {
-    sendCommand(JM_WZ1_level,99)
-    logInfo("","INFO-013: JM_WZ1 goes DOWN because it was STABLE")
+  if (JM_WZ1_1_ACTIVITY_STATE.state == "STABLE") {
+    sendCommand(JM_WZ1_1_level,99)
+    logInfo("","INFO-013: JM_WZ1_1 goes DOWN because it was STABLE")
   } else {
-      if (JM_WZ1_ACTIVITY_STATE.state == "UP") {
-      logInfo("","INFO-014: JM_WZ1 stopps because was going UP")
-      sendCommand(JM_WZ1_STOP,ON)
+      if (JM_WZ1_1_ACTIVITY_STATE.state == "UP") {
+      logInfo("","INFO-014: JM_WZ1_1 stopps because was going UP")
+      sendCommand(JM_WZ1_1_STOP,ON)
     }    
   }
 end

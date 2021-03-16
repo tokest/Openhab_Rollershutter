@@ -1,12 +1,12 @@
 sitemap jalousie_b4_dev label="test JALOUSIE2 B4" {
        
-	Frame label="Test Jalousie2 B4" {
-	Switch item=JT2_B4_UP label="AUF" 
-	Switch item=JT2_B4_DOWN label="AB" 
-	Switch item=JM2_B4_STOP label="Jalousie2 B4 Stop" 	
-	Slider item=JM2_B4_level label="Jalousie LEVEL [%.2f]" icon="rollershutter"
-	Text item=JM2_B4_level label="Jalousie LEVEL = [%s]" icon="rollershutter"
-	Slider item=JM2_B4_level_2 label="JM1_B4_level_2 [%.2f]" 
+	Frame label="Test Jalousie B4_2" {
+	Switch item=JT_B4_2_UP label="AUF" 
+	Switch item=JT_B4_2_DOWN label="AB" 
+	Switch item=JM_B4_2_STOP label="Jalousie2 B4 Stop" 
+	Slider item=JM_B4_2_level label="Jalousie LEVEL [%.2f]" icon="rollershutter"
+	Text item=JM_B4_2_level label="Jalousie LEVEL = [%s]" icon="rollershutter"
+	Slider item=JM_B4_2_level_2 label="JM1_B4_level_2 [%.2f]" 
     }
 }
 

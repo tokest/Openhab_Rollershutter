@@ -10,80 +10,80 @@
 // Jalousie 8 Buero 4: 0033BFD1
  
 Bridge enocean:bridge:gtwy "EnOcean Gateway" [ path="/dev/serial0" ] { 
-  Thing classicDevice cd02 "Taster Jalousie B1" @ "Buero1" [
+  Thing classicDevice cd02 "Taster Jalousie B1_1" @ "Buero1" [
         senderIdOffset=2,
         sendingEEPId="F6_02_01",
         broadcastMessages=true,
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : virtualSwitchA		[duration=300, switchMode="rockerSwitch"]
-        Type rockerswitchListenerSwitch : Listener12 "Taster J B1" 	[enoceanId="003AD164", channel="channelA", switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs12		[duration=300, switchMode="rockerSwitch"]
+        Type rockerswitchListenerSwitch : Listener12 "Taster J B1"  [enoceanId="003AD164", channel="channelA", switchMode="rockerSwitch"]
         }
 
-  Thing classicDevice cd03 "Taster Jalousie B2" @ "Buero2" [
+  Thing classicDevice cd03 "Taster Jalousie B2_1" @ "Buero2" [
 	senderIdOffset=3,
         sendingEEPId="F6_02_01",
         broadcastMessages=true,
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : virtualSwitchA	[duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs13	[duration=300, switchMode="rockerSwitch"]
         Type rockerswitchListenerSwitch : Listener13 "Taster J B2"	[enoceanId="003AD187", channel="channelA", switchMode="rockerSwitch"]
         }
 
-  Thing classicDevice cd04 "Taster Jalousie B3" @ "Buero3" [
+  Thing classicDevice cd04 "Taster Jalousie B3_1" @ "Buero3" [
 	senderIdOffset=4,
         sendingEEPId="F6_02_01",
         broadcastMessages=true,
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : virtualSwitchA   [duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs14   [duration=300, switchMode="rockerSwitch"]
         Type rockerswitchListenerSwitch : Listener14 "Taster J B3"	[enoceanId="003AD18B", channel="channelA", switchMode="rockerSwitch"]
         }
 
- Thing classicDevice cd05 "Taster Jalousie1 SZ1" @ "Schlafzimmer" [
+ Thing classicDevice cd05 "Taster Jalousie SZ1_1" @ "Schlafzimmer" [
 	senderIdOffset=5,
         sendingEEPId="F6_02_01",
         broadcastMessages=true,
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : virtualSwitchA	[duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs15	[duration=300, switchMode="rockerSwitch"]
         Type rockerswitchListenerSwitch : Listener15 "Taster J S1"	[enoceanId="003AA4CA", channel="channelA", switchMode="rockerSwitch"]
         }
 
- Thing classicDevice cd06 "Taster Jalousie2 SZ1" @ "Schlafzimmer" [
+ Thing classicDevice cd06 "Taster Jalousie SZ1_2" @ "Schlafzimmer" [
 	senderIdOffset=6,
         sendingEEPId="F6_02_01",
         broadcastMessages=true,
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : virtualSwitchA	[duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs16	[duration=300, switchMode="rockerSwitch"]
         Type rockerswitchListenerSwitch : Listener16 "Taster J S2"	[enoceanId="003AA4CA", channel="channelB", switchMode="rockerSwitch"]
         }
 
- Thing classicDevice cd07 "Taster Jalousie 1 Buero 4" @ "Buero4" [
+ Thing classicDevice cd07 "Taster Jalousie Bu4_1" @ "Buero4" [
 	senderIdOffset=7, 
         sendingEEPId="F6_02_01",
         broadcastMessages=true,
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : virtualSwitchA 		[duration=300, switchMode="rockerSwitch"]
-	Type rockerswitchListenerSwitch : Listener17 "Taster J1 B4" 	[enoceanId="0033BFD1", channel="channelA", switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs17	[duration=300, switchMode="rockerSwitch"]
+	Type rockerswitchListenerSwitch : Listener17 "Taster J1 B4" [enoceanId="0033BFD1", channel="channelA", switchMode="rockerSwitch"]
 	}
 
- Thing classicDevice cd08 "Taster Jalousie 2 Buero 4" @ "Buero4" [
+ Thing classicDevice cd08 "Taster Jalousie Bu4_2" @ "Buero4" [
         senderIdOffset=8,
         sendingEEPId="F6_02_01",
         broadcastMessages=true,
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : virtualSwitchA 		[duration=300, switchMode="rockerSwitch"]
-	Type rockerswitchListenerSwitch : Listener18  "Taster J2 B4" 	[enoceanId="0033BFD1", channel="channelB", switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs18	[duration=300, switchMode="rockerSwitch"]
+	Type rockerswitchListenerSwitch : Listener18  "Taster J2 B4" [enoceanId="0033BFD1", channel="channelB", switchMode="rockerSwitch"]
         }
 }

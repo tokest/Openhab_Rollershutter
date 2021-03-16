@@ -1,0 +1,24 @@
+// Items 
+Switch JT_B1_1_UP "Jalousie Taster B1 UP" <switch> (Firstfloor, Buero1, gJalousie) {
+	channel="enocean:classicDevice:gtwy:cd02:virtualSwitchA",
+	channel="enocean:classicDevice:gtwy:cd02:Listener12"
+} 
+Switch JT_B1_1_DOWN "Jalousie Taster B1 DOWN" <switch> (Firstfloor, Buero1, gJalousie) {
+	channel="enocean:classicDevice:gtwy:cd02:virtualSwitchA",
+	channel="enocean:classicDevice:gtwy:cd02:Listener12"
+} 
+
+Rollershutter JM_B1_1_T_LEVEL "Jalousie Buero 1" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:3#LEVEL"}
+String JM_B1_1_T_ACTIVITY_STATE "T_ACTIVITY_STATE" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:3#ACTIVITY_STATE"}
+Rollershutter JM_B1_1_T_LEVEL_2 "T_LEVEL_2" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:3#LEVEL_2"}
+String JM_B1_1_T_LEVEL_STATUS "T_LEVEL_STATUS" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:3#LEVEL_STATUS"}
+String JM_B1_1_T_PROCESS "T_PROCESS" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:3#PROCESS"}
+String JM_B1_1_T_SECTION "T_SECTION" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:3#SECTION"}
+String JM_B1_1_T_SECTION_STATUS "T_SECTION_STATUS" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:3#SECTION_STATUS"}
+Dimmer JM_B1_1_level "Level" <rollershutter> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:4#LEVEL"}
+Dimmer JM_B1_1_level_2 "Level 2" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:4#LEVEL_2"}
+String JM_B1_1_LEVEL_STATUS "LEVEL_STATUS" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:4#LEVEL_STATUS"}
+String JM_B1_1_ACTIVITY_STATE "ACTIVITY_STATE" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:4#ACTIVITY_STATE"}
+Switch JM_B1_1_STOP "STOP" <window> (Groundfloor, Buero1) {channel="homematic:HmIP-FBL:3014F711A0001F9A49923BBD:00139BE98F19B6:4#STOP"}
+String JM_B1_1_Status "J B1 Status" 
+

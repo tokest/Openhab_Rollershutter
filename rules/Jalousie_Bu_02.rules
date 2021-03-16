@@ -1,0 +1,47 @@
+//
+//	For use this template search for "B2" and replace it with the right value
+//  JM_B2_1_ACTIVITY_STATE = STABLE / UP / DOWN /
+//
+// **************************************************************************
+rule "Jalousie B2 up"
+//
+when 
+  Item JT_B2_1_UP changed to OFF
+then
+//
+  logInfo("","INFO-001: Der Taster JT_B2_1_UP wurde betaetigt")
+  logInfo("","INFO-002: The state of JM_B2_1_ACTIVITY_STATE is >>> " + JM_B2_1_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(JT_B2_1_UP,ON)
+  //
+  if (JM_B2_1_ACTIVITY_STATE.state == "STABLE") {
+    sendCommand(JM_B2_1_level,0)	
+	sendCommand(JM_B2_1_level_2,0)
+    logInfo("","INFO-003: JM_B2_1 goes UP because it was STABLE")
+  } else {
+      if (JM_B2_1_ACTIVITY_STATE.state == "DOWN") {
+      logInfo("","INFO-004: JM_B2_1 stopps because was going DOWN")
+      sendCommand(JM_B2_1_STOP,ON)
+    }    
+  }
+end
+
+// **************************************************************************
+rule "Jalousie B2 down"
+when 
+  Item JT_B2_1_DOWN changed to ON
+then
+//
+  logInfo("","INFO-011: Taster JT_B2_1_DOWN CHANGED to ON")
+  logInfo("","INFO-012: The state of JM_B2_1_ACTIVITY_STATE is >>> " + JM_B2_1_ACTIVITY_STATE.state.toString + " <<<")
+  sendCommand(JT_B2_1_DOWN,OFF)
+  //
+  if (JM_B2_1_ACTIVITY_STATE.state == "STABLE") {
+    sendCommand(JM_B2_1_level,99)
+    logInfo("","INFO-013: JM_B2_1 goes DOWN because it was STABLE")
+  } else {
+      if (JM_B2_1_ACTIVITY_STATE.state == "UP") {
+      logInfo("","INFO-014: JM_B2_1 stopps because was going UP")
+      sendCommand(JM_B2_1_STOP,ON)
+    }    
+  }
+end
