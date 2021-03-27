@@ -1,19 +1,19 @@
 // Items
 Switch JT_SZ1_1_UP "Jalousie 1 Taster SZ1 UP" (Firstfloor, Schlafzimmer, gJalousie) {
-	channel="enocean:classicDevice:gtwy:cd05:virtualRockerswitchA",
+	channel="enocean:classicDevice:gtwy:cd05:vs15",
 	channel="enocean:classicDevice:gtwy:cd05:Listener15"
 } 
 Switch JT_SZ1_1_DOWN "Jalousie 1 Taster SZ1 DOWN" (Firstfloor, Schlafzimmer, gJalousie) {
-	channel="enocean:classicDevice:gtwy:cd05:virtualRockerswitchA",
+	channel="enocean:classicDevice:gtwy:cd05:vs15",
 	channel="enocean:classicDevice:gtwy:cd05:Listener15"
 } 
 
 Switch JT_SZ1_2_UP "Jalousie 2 Taster SZ1 UP" (Firstfloor, Schlafzimmer,gJalousie) {
-	channel="enocean:classicDevice:gtwy:cd06:virtualRockerswitchA",
+	channel="enocean:classicDevice:gtwy:cd06:vs16",
 	channel="enocean:classicDevice:gtwy:cd06:Listener16"
 } 
 Switch JT_SZ1_2_DOWN "Jalousie 2 Taster SZ1 DOWN" (Firstfloor, Schlafzimmer, gJalousie) {
-	channel="enocean:classicDevice:gtwy:cd06:virtualRockerswitchA",
+	channel="enocean:classicDevice:gtwy:cd06:vs16",
 	channel="enocean:classicDevice:gtwy:cd06:Listener16"
 } 
 

@@ -1,10 +1,10 @@
 // Items 
 Switch JT_B1_1_UP "Jalousie Taster B1 UP" <switch> (Firstfloor, Buero1, gJalousie) {
-	channel="enocean:classicDevice:gtwy:cd02:virtualSwitchA",
+	channel="enocean:classicDevice:gtwy:cd02:vs12",
 	channel="enocean:classicDevice:gtwy:cd02:Listener12"
 } 
 Switch JT_B1_1_DOWN "Jalousie Taster B1 DOWN" <switch> (Firstfloor, Buero1, gJalousie) {
-	channel="enocean:classicDevice:gtwy:cd02:virtualSwitchA",
+	channel="enocean:classicDevice:gtwy:cd02:vs12",
 	channel="enocean:classicDevice:gtwy:cd02:Listener12"
 } 
 
