@@ -11,8 +11,8 @@ sitemap licht label="LICHT" {
                 Switch item=MyStrom_03_Switch
         }
         Frame label="LICHT SL Gallerie" {
-                Switch item=MyStrom_04_Switch
-        //      Chart item=Plug_04_Temperature period=D refresh=60000 service="mysql"
+                Switch item=MyStrom_01_Switch
+        //      Chart item=Plug_01_Temperature period=D refresh=60000 service="mysql"
         }
 }
 
