@@ -17,7 +17,7 @@ Bridge enocean:bridge:gtwy "EnOcean Gateway" [ path="/dev/serial0" ] {
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : vs12	[duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs42	[duration=300, switchMode="rockerSwitch"]
         Type rockerswitchListenerSwitch : Listener12 "Taster J B1"  [enoceanId="003AD164", channel="channelA", switchMode="rockerSwitch"]
         }
 
@@ -28,7 +28,7 @@ Bridge enocean:bridge:gtwy "EnOcean Gateway" [ path="/dev/serial0" ] {
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : vs13	[duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs43	[duration=300, switchMode="rockerSwitch"]
         Type rockerswitchListenerSwitch : Listener13 "Taster J B2"	[enoceanId="003AD187", channel="channelA", switchMode="rockerSwitch"]
         }
 
@@ -39,7 +39,7 @@ Bridge enocean:bridge:gtwy "EnOcean Gateway" [ path="/dev/serial0" ] {
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : vs14      [duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs44      [duration=300, switchMode="rockerSwitch"]
         Type rockerswitchListenerSwitch : Listener14 "Taster J B3"	[enoceanId="003AD18B", channel="channelA", switchMode="rockerSwitch"]
         }
 
@@ -50,7 +50,7 @@ Bridge enocean:bridge:gtwy "EnOcean Gateway" [ path="/dev/serial0" ] {
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : vs15	[duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs45	[duration=300, switchMode="rockerSwitch"]
         Type rockerswitchListenerSwitch : Listener15 "Taster J S1"	[enoceanId="003AA4CA", channel="channelA", switchMode="rockerSwitch"]
         }
 
@@ -61,7 +61,7 @@ Bridge enocean:bridge:gtwy "EnOcean Gateway" [ path="/dev/serial0" ] {
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : vs16	[duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs46	[duration=300, switchMode="rockerSwitch"]
         Type rockerswitchListenerSwitch : Listener16 "Taster J S2"	[enoceanId="003AA4CA", channel="channelB", switchMode="rockerSwitch"]
         }
 
@@ -72,7 +72,7 @@ Bridge enocean:bridge:gtwy "EnOcean Gateway" [ path="/dev/serial0" ] {
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : vs17	[duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs47	[duration=300, switchMode="rockerSwitch"]
 	Type rockerswitchListenerSwitch : Listener17 "Taster J1 B4" [enoceanId="0033BFD1", channel="channelA", switchMode="rockerSwitch"]
 	}
 
@@ -83,7 +83,7 @@ Bridge enocean:bridge:gtwy "EnOcean Gateway" [ path="/dev/serial0" ] {
         receivingEEPId="F6_02_02",
         suppressRepeating=false
    ] {
-        Type virtualSwitchA : vs18	[duration=300, switchMode="rockerSwitch"]
+        Type virtualSwitchA : vs48	[duration=300, switchMode="rockerSwitch"]
 	Type rockerswitchListenerSwitch : Listener18  "Taster J2 B4" [enoceanId="0033BFD1", channel="channelB", switchMode="rockerSwitch"]
         }
 }
